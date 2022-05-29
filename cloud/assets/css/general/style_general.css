@@ -1,0 +1,158 @@
+/* FOntsGoogle */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.section_login {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #232323;
+}
+
+.container_divs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #0cb3b3;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 10px;
+  overflow: hidden;
+  animation: animation_login_square 4s linear infinite;
+}
+@keyframes animation_login_square {
+  0% {
+    box-shadow: 0px 0px 0px #0cb3b3;
+  }
+  15% {
+    box-shadow: 0px 0px 8px #0cb3b3;
+  }
+  30% {
+    box-shadow: 0px 0px 10px #0cb3b3;
+  }
+  45% {
+    box-shadow: 0px 0px 20px #0cb3b3;
+  }
+  60% {
+    box-shadow: 0px 0px 10px #0cb3b3;
+  }
+  75% {
+    box-shadow: 0px 0px 8px #0cb3b3;
+  }
+  100% {
+    box-shadow: 0px 0px 0px #0cb3b3;
+  }
+}
+.container_divs > div {
+  display: flex;
+  flex-basis: calc(100% / 2);
+}
+.container_divs > div:nth-child(1) {
+  background-image: url("../../img/login_cloud.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  width: 700px;
+  height: 500px;
+  animation: animation_startpadge_divsY_down 500ms linear;
+}
+.container_divs > div:nth-child(2) {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  animation: animation_startpadge_divsY_up 500ms linear;
+}
+@keyframes animation_startpadge_divsY_down {
+  from {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes animation_startpadge_divsY_up {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.container_divs > div:nth-child(2) > div {
+  margin-top: 15px;
+}
+.container_divs > div:nth-child(2) > h1 {
+  font-family: "Lobster", cursive;
+  font-size: 70px;
+  letter-spacing: 2px;
+  color: #d3d3d3e1;
+  text-shadow: 0 0px 50px #0cb3b3;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  animation: animation_login_text 5s linear infinite;
+}
+@keyframes animation_login_text {
+  0% {
+    text-shadow: 0px 0px 10px #0cb3b3;
+  }
+  15% {
+    text-shadow: 0px 0px 20px #0cb3b3;
+  }
+  30% {
+    text-shadow: 0px 0px 30px #0cb3b3;
+  }
+  45% {
+    text-shadow: 0px 0px 50px #0cb3b3;
+  }
+  60% {
+    text-shadow: 0px 0px 30px #0cb3b3;
+  }
+  75% {
+    text-shadow: 0px 0px 20px #0cb3b3;
+  }
+  100% {
+    text-shadow: 0px 0px 10px #0cb3b3;
+  }
+}
+.message_login {
+  color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+}
+.container_divs > div:nth-child(2) > div:nth-child(3) {
+  border-bottom: 1px solid #d3d3d3;
+  width: 90%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.container_divs > div:nth-child(2) > div:nth-child(4) {
+  border-bottom: 1px solid #d3d3d3;
+  width: 90%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.container_divs > div:nth-child(2) > div:nth-child(5) {
+  margin-top: 15px;
+}
+.container_divs > div:nth-child(2) > div:nth-child(6) {
+  margin-top: 15px;
+}
+.icon-login {
+  font-size: 30px;
+  position: absolute;
+  color: #e7e7e7;
+}

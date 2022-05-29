@@ -1,0 +1,48 @@
+.input_login_user,
+.input_login_passw {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin: 0px;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+  color: #9dffff;
+}
+.label_login {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(219, 219, 219);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.check_button {
+  margin-top: 10px;
+  margin-left: 5px;
+  width: 18px;
+  height: 18px;
+}
+
+.button_login {
+  padding: 10px;
+  width: 200px;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #d3d3d3e1;
+  outline: none;
+  font-weight: bold;
+  border: none;
+  color: #1a1a1a;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: all 600ms;
+}
+
+.button_login:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #0cb3b3;
+  color: #d3d3d3e1;
+  transition: all 600ms;
+}

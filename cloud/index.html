@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/general/style_general.css">
+    <link rel="stylesheet" href="assets/css/inputs/inputs.css">
+    <link rel="stylesheet" href="../assets/css/font_icons/all.min.css">
+    <title>Login</title>
+</head>
+<body>
+    <section class="section_login">
+        <form method="POST">
+            <div class="container_divs">
+                <div>
+                </div>
+                <div>
+                    <h1>Login</h1>
+                    <div><h3 class="message_login">Usuario o contraseña incorrectos.</h3></div>
+                    <div>
+                        <i class="far fa-user icon-login"></i><input class="input_login_user" placeholder="Usuario..." maxlength="35" type="mail" requiered>
+                    </div>
+                    <div>
+                        <i class="fas fa-key icon-login"></i><input class="input_login_passw" placeholder="Contraseña..." maxlength="50" type="password" requiered>
+                    </div>
+                    <div>
+                        <label class="label_login" for="check_cloud">Cloud</label>
+                        <input class="check_button" type="radio" name="check_cloud" id="check_cloud" checked>
+                        <label class="label_login" for="check_tutorial">Tutorials</label>
+                        <input class="check_button" type="radio" name="check_cloud" id="check_tutorial">
+                    </div>
+                    <div>
+                        <button class="button_login" type="submit">Ingresar <i class="fas fa-sign-in-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
